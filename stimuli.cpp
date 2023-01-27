@@ -21,7 +21,9 @@ void stimuli::process()
     if (counter <= sequence.length())
     {
         std::string data = sequence.substr(counter, 1);
+        // cout<<"seq len="<<sequence.length() << endl;
         output.write(data.c_str()[0]);
+        // cout<<data.c_str()[0];
         counter++;
     }
     else
